@@ -6,13 +6,13 @@ enforce_ssl         = false
 builddrafts         = true                         # Include pages with draft status of true
 canonifyurls        = true                          # Turns relative urls into absolute urls
 # disqusshortname   = "xxx"                         # Enable Disqus for comments
-googleAnalytics   = "UA-113410660-1"
+googleAnalytics     = "UA-113410660-1"
 
 [params]
     blogHead        = "Blog"                        # Full name shows on blog post pages
     firstName       = "Edward"                      # First name shows in introduction on main page
     tagLine         = "I'm a web and Android software developer in El Paso, Texas."     # Appears after the introduction
-    introHeight     = "large"                       # Input either 'medium' or 'large' or 'fullheight'
+    introHeight     = "fullheight"                       # Input either 'medium' or 'large' or 'fullheight'
     themeStyle      = "light"                       # Choose 'light' or 'dark'
     avatar          = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
     email           = "edward@edwardseymour.me"      # Shows in contact section, or leave blank to omit
@@ -22,13 +22,13 @@ googleAnalytics   = "UA-113410660-1"
     dateFormFull    = "Mon Jan 2 2006 15:04:05 EST"
     cacheBuster     = false                         # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
     description     = "Website Description"         # Max 160 characters show in search results
-    faviconFile     = "img/fav.ico"
+    faviconFile     = "favicon.ico"
     highlightjs     = true                          # Syntax highlighting
     footerText      = "© Edward Seymour 2018"         # Text to show in footer (overrides default text)
     fadeIn          = false                         # Turn on/off the fade-in effect
 
     showBlog            = false                      # Show Blog section on home page
-    showProjects        = false                      # Show Projects section on home page
+    showProjects        = true                      # Show Projects section on home page
     projectColumns      = "3"                       # Choose "2" or "3" columns for projects section
     placeHolderimg      = "/img/workday.jpg"        # For Projects without image
     showAllPosts        = false                     # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
