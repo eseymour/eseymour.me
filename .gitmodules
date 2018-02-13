@@ -1,3 +1,6 @@
 [submodule "introduction/themes/hugo-theme-introduction"]
-	path = introduction/themes/hugo-theme-introduction
+	path = introduction/themes/introduction
 	url = https://github.com/hivickylai/hugo-theme-introduction
+[submodule "minimal/themes/minimal"]
+	path = minimal/themes/minimal
+	url = https://github.com/calintat/minimal.git
