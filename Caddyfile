@@ -1,0 +1,21 @@
+edwardseymour.me www.eseymour.me {
+  redir https://eseymour.me
+}
+
+eseymour.me {
+  root public
+
+  git github.com/eseymour/eseymour.me {
+    path ../
+    hook /webhook {$GITHUB_WEBHOOK_SECRET}
+    then ./build.sh
+  }
+}
+
+introduction.eseymour.me {
+  root introduction/public
+}
+
+minimal.eseymour.me {
+  root minimal/public
+}
