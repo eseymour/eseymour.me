@@ -7,7 +7,7 @@ googleAnalytics = "UA-113410660-1"
 
 [params]
     author = "Edward Seymour"
-    description = "Personal blog theme powered by Hugo"
+    description = "I'm a web and Android Software Developer in El Paso, Texas"
     githubUsername = "eseymour"
     accent = "red"
     showBorder = true
@@ -15,7 +15,7 @@ googleAnalytics = "UA-113410660-1"
     font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+    highlightLanguages = ["go"]
     copyright = "&copy; Edward Seymour 2018"
 
 [[menu.main]]
