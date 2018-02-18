@@ -3,7 +3,7 @@ edwardseymour.me www.eseymour.me {
 }
 
 eseymour.me {
-  root public
+  root /var/www/eseymour.me/public
 
   git github.com/eseymour/eseymour.me {
     path ../
@@ -13,9 +13,9 @@ eseymour.me {
 }
 
 introduction.eseymour.me {
-  root introduction/public
+  root /var/www/eseymour.me/introduction/public
 }
 
 minimal.eseymour.me {
-  root minimal/public
+  root /var/www/eseymour.me/minimal/public
 }
