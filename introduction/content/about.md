@@ -7,7 +7,7 @@ I'm a senior at The University of Texas at El Paso studying Computer Science.
 I'm an undergraduate research assistant at the Robust Autonomic Systems and a
 teaching assistant for CS 3432 Computer Architecture I.
 
-I'm also software developer for an unnamed startup developing the [SonoBueno]
+I'm also software developer at Intone Labs developing the [SonoBueno]
 app for Android and its underlying cross-platform DSP library used by
 iOS, Android and Universal Windows Platform applications.
 
