@@ -21,4 +21,4 @@ palette and 28 sprites used by minesweeper only use 888 bytes of flash.
 
 [repo]: https://github.com/utep-cs-arch-classes/arch1-project3-eseymour/blob/master/minesweeper/board.h
 
-[minesweeper-thumb]: img/minesweeper-thumb.png
+[minesweeper-thumb]: /img/minesweeper-thumb.png
