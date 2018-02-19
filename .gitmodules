@@ -4,3 +4,6 @@
 [submodule "minimal/themes/minimal"]
 	path = minimal/themes/minimal
 	url = https://github.com/calintat/minimal.git
+[submodule "initio/themes/hugo-initio"]
+	path = initio/themes/hugo-initio
+	url = https://github.com/miguelsimoni/hugo-initio.git
