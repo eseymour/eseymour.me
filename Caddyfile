@@ -2,7 +2,14 @@ http://*.edwardseymour.me {
   redir https://eseymour.me{uri}
 }
 
-https://*.edwardseymour.me www.eseymour.me {
+https://*.edwardseymour.me {
+  redir https://eseymour.me{uri}
+  tls {
+    max_certs 10
+  }
+}
+
+www.eseymour.me {
   redir https://eseymour.me{uri}
 }
 
