@@ -1,18 +1,4 @@
-http://*.edwardseymour.me {
-  redir https://eseymour.me{uri}
-}
-
-https://*.edwardseymour.me {
-  redir https://eseymour.me{uri}
-  tls {
-    max_certs 50
-  }
-}
-
-www.eseymour.me {
-  redir https://eseymour.me{uri}
-}
-
+# Homepage
 eseymour.me {
   root /var/www/eseymour.me/public
   gzip
@@ -24,6 +10,7 @@ eseymour.me {
   }
 }
 
+# Test sites
 introduction.eseymour.me {
   root /var/www/eseymour.me/introduction/public
   gzip
@@ -32,4 +19,21 @@ introduction.eseymour.me {
 minimal.eseymour.me {
   root /var/www/eseymour.me/minimal/public
   gzip
+}
+
+# www redirect
+www.eseymour.me {
+  redir https://eseymour.me{uri}
+}
+
+# Old domain redirects
+http://*.edwardseymour.me {
+  redir https://eseymour.me{uri}
+}
+
+https://*.edwardseymour.me {
+  redir https://eseymour.me{uri}
+  tls {
+    max_certs 50
+  }
 }
