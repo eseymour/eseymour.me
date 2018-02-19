@@ -1,4 +1,4 @@
-edwardseymour.me www.eseymour.me {
+*.edwardseymour.me www.eseymour.me {
   redir https://eseymour.me
 }
 
