@@ -3,6 +3,10 @@ eseymour.me {
   root /var/www/eseymour.me/public
   gzip
 
+  # Cache content for an hour
+  header / Cache-Control "max-age=3600, public"
+
+  # Git webhook for this repository
   git github.com/eseymour/eseymour.me {
     path ../
     hook /webhook {$GITHUB_WEBHOOK_SECRET}
@@ -14,16 +18,19 @@ eseymour.me {
 introduction.eseymour.me {
   root /var/www/eseymour.me/introduction/public
   gzip
+  header / Cache-Control no-cache
 }
 
 minimal.eseymour.me {
   root /var/www/eseymour.me/minimal/public
   gzip
+  header / Cache-Control no-cache
 }
 
 initio.eseymour.me {
   root /var/www/eseymour.me/initio/public
   gzip
+  header / Cache-Control no-cache
 }
 
 # www redirect
