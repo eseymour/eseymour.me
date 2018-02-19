@@ -32,11 +32,11 @@ www.eseymour.me {
 }
 
 # Old domain redirects
-http://*.edwardseymour.me {
+http://*.edwardseymour.me http://edwardseymour.me {
   redir https://eseymour.me{uri}
 }
 
-https://*.edwardseymour.me {
+https://*.edwardseymour.me https://edwardseymour.me {
   redir https://eseymour.me{uri}
   tls {
     max_certs 50
