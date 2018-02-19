@@ -2,7 +2,6 @@ baseURL = "https://initio.eseymour.me/"
 languageCode = "en-us"
 title = "Edward Seymour"
 theme = "hugo-initio"
-publishDir = "docs"
 
 [params]
     name = "Edward Seymour"
