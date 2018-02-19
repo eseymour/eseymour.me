@@ -1,7 +1,6 @@
 ---
 title: "Contact"
 date: 2018-02-18T16:57:48-07:00
-draft: true
 ---
 
 ## [edward@edwardseymour.me](mailto://edward@edwardseymour.me)
