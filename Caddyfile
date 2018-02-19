@@ -4,6 +4,7 @@ edwardseymour.me www.eseymour.me {
 
 eseymour.me {
   root /var/www/eseymour.me/public
+  gzip
 
   git github.com/eseymour/eseymour.me {
     path ../
@@ -14,8 +15,10 @@ eseymour.me {
 
 introduction.eseymour.me {
   root /var/www/eseymour.me/introduction/public
+  gzip
 }
 
 minimal.eseymour.me {
   root /var/www/eseymour.me/minimal/public
+  gzip
 }
