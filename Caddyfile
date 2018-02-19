@@ -5,7 +5,7 @@ http://*.edwardseymour.me {
 https://*.edwardseymour.me {
   redir https://eseymour.me{uri}
   tls {
-    max_certs 10
+    max_certs 50
   }
 }
 
