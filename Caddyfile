@@ -1,7 +1,8 @@
 http://*.edwardseymour.me {
   redir https://eseymour.me{uri}
 }
-*.edwardseymour.me www.eseymour.me {
+
+https://*.edwardseymour.me www.eseymour.me {
   redir https://eseymour.me{uri}
 }
 
