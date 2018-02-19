@@ -1,6 +1,8 @@
 ---
-title: "Minesweeper on MSP430"
-date: 2018-02-10T21:00:31-07:00
+title: "Minesweeper"
+description: "Minesweeper game on the MSP430 MCU"
+tags: ["c", "msp430"]
+date: 2017-05-04
 draft: false
 ---
 
