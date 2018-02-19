@@ -32,6 +32,12 @@ googleAnalytics = "UA-113410660-1"
     name = "Projects"
     weight = 3
 
+[[menu.main]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 3
+
+
 # Social icons to be shown on the right-hand side of the navigation bar
 # The "name" field should match the name of the icon to be used
 # The list of available icons can be found at http://fontawesome.io/icons/
@@ -40,15 +46,3 @@ googleAnalytics = "UA-113410660-1"
     url = "https://github.com/eseymour/"
     name = "github"
     weight = 1
-
-[[menu.icon]]
-    url = "mailto:mail@edwardseymour.me"
-    name = "envelope-o"
-    title = "mail@edwardseymour.me"
-    weight = 2
-
-[[menu.icon]]
-    url = "tel:+01-915-328-5073"
-    name = "phone"
-    title = "(915) 328-5073"
-    weight = 3
