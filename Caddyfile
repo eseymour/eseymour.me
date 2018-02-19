@@ -21,6 +21,11 @@ minimal.eseymour.me {
   gzip
 }
 
+initio.eseymour.me {
+  root /var/www/eseymour.me/initio/public
+  gzip
+}
+
 # www redirect
 www.eseymour.me {
   redir https://eseymour.me{uri}
