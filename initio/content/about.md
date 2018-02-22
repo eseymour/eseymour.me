@@ -1,5 +1,8 @@
 ---
+menu: "main"
 title: "About"
+type: "about"
+weight: "2"
 ---
 
 I'm a senior at The University of Texas at El Paso studying Computer Science.
@@ -14,5 +17,5 @@ My development interests are in cybersecurity, cryptography and Go.
 
 ### [Download my resume.][resume]
 
-[resume]: pdf/resume-eseymour.pdf
+[resume]: /pdf/resume-eseymour.pdf
 [SonoBueno]: http://sonobueno.com

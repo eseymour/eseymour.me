@@ -16,7 +16,7 @@ theme = "hugo-initio"
 
     showSubheader = true
     showServices = false
-    showRecentWorks = true
+    showRecentWorks = false
     showDownload = false
     showClients = false
 
@@ -29,10 +29,6 @@ theme = "hugo-initio"
     name = "home"
     url = "/"
     weight = 1
-[[menu.main]]
-    name = "projects"
-    url = "/projects/"
-    weight = 5
 
 [params.google.analytics]
     trackerID = "UA-113410660-1"
