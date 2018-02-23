@@ -6,7 +6,7 @@ theme = "hugo-initio"
 [params]
     name = "Edward Seymour"
     description = "I'm a web and Android software developer in El Paso, Texas."
-    email = "edward@edwardseymour.me"
+    email = "edward@eseymour.me"
     phone = "915 328 5073"
     address = "El Paso, Texas"
     year = 2018
