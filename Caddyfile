@@ -14,25 +14,6 @@ eseymour.me {
   }
 }
 
-# Test sites
-introduction.eseymour.me {
-  root /var/www/eseymour.me/introduction/public
-  gzip
-  header / Cache-Control no-cache
-}
-
-minimal.eseymour.me {
-  root /var/www/eseymour.me/minimal/public
-  gzip
-  header / Cache-Control no-cache
-}
-
-initio.eseymour.me {
-  root /var/www/eseymour.me/initio/public
-  gzip
-  header / Cache-Control no-cache
-}
-
 # www redirect
 www.eseymour.me {
   redir https://eseymour.me{uri}
