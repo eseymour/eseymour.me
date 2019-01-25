@@ -69,4 +69,4 @@ pygmentscodefencesguesssyntax = true
 [[menu.main]]
     name = "Resume"
     weight = 3
-    url = "/pdf/eseymour-resume.pdf"
+    url = "/pdf/resume-eseymour-20190125.pdf"
