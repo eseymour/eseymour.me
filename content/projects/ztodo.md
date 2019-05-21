@@ -9,4 +9,5 @@ lectures. While still under development, I helped create a corpus from the
 subtitles of 1000 hours of MIT OpenCourseWare lectures.
 
 The full corpus will be released soon this summer, with additional lecture data
-from Open Yale Courses.
+from Open Yale Courses. A text file containing sentences, useful for random
+text generation from the corpus is available [here](data/mit_ocw.txt).
