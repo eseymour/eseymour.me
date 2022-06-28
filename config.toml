@@ -29,17 +29,17 @@ pygmentscodefencesguesssyntax = true
     rtl = false
 
     math = false
-    custom_css = ["css/custom.css"]
+    customCSS = ["css/custom.css"]
 
 # Social links
 [[params.social]]
     name = "Email"
-    icon = "fas fa-envelope fa-2x"
+    icon = "fa fa-envelope fa-2x"
     weight = 1
     url = "mailto:edward@eseymour.me"
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github fa-2x"
+    icon = "fa fa-github fa-2x"
     weight = 2
     url = "https://github.com/eseymour/"
 #[[params.social]]
