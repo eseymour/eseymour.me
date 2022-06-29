@@ -1,0 +1,52 @@
+baseurl: 'https://eseymour.me'
+title: Edward Seymour
+theme: hugo-coder
+languagecode: en
+defaultcontentlanguage: en
+
+paginate: 20
+canonifyurls: true
+
+pygmentsstyle: bw
+pygmentscodefences: true
+pygmentscodefencesguesssyntax: true
+
+params:
+  author: Edward Seymour
+  info: 'Full-Stack Software Engineer based in Seattle, Washington'
+  description: Edward Seymour's personal website
+  keywords: 'blog,developer,personal'
+  avatarurl: img/avatar.jpg
+
+  favicon_32: /img/favicon-32x32.png
+  favicon_16: /img/favicon-16x16.png
+
+  hidecredits: true
+  hidecopyright: false
+
+  rtl: false
+
+  math: false
+  customCSS: [css/custom.css]
+  
+  social:
+    - name: Email
+      icon: fa fa-envelope fa-2x
+      weight: 1
+      url: 'mailto:edward@eseymour.me'
+    - name: Github
+      icon: fa fa-github fa-2x
+      weight: 2
+      url: 'https://github.com/eseymour/'
+
+menu:
+  main:
+    - name: About
+      weight: 1
+      url: /about/
+    - name: Projects
+      weight: 2
+      url: /projects/
+    - name: Resume
+      weight: 3
+      url: /pdf/edward_seymour_resume.pdf
