@@ -4,10 +4,20 @@ pipeline:
     pull: true
     commands:
       - hugo
-  deploy:
-    image: node:lts
+  deploy-prod:
+    image: tryvium/netlify-cli
     pull: true
     commands:
-      - npm install netlify-cli -g
-      - netlify deploy --dir=public
+      - netlify deploy --prod --dir=public --message="$CI_COMMIT_MESSAGE"
     secrets: [netlify_auth_token, netlify_site_id]
+    when:
+      branch: main
+  deploy-draft:
+    image: tryvium/netlify-cli
+    pull: true
+    commands:
+      - netlify deploy --dir=public --message="[$CI_COMMIT_BRANCH $CI_BUILD_EVENT] $CI_COMMIT_MESSAGE"
+    secrets: [netlify_auth_token, netlify_site_id]
+    when:
+      branch:
+        exclude: [main]
