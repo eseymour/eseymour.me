@@ -1,0 +1,10 @@
+pipeline:
+  build:
+    image: klakegg/hugo:latest
+    commands:
+      - hugo
+  deploy:
+    image: node:lts
+    commands:
+      - npm install netlify-cli -g
+      - netlify help
