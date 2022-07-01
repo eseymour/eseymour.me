@@ -1,10 +1,13 @@
 pipeline:
   build:
     image: klakegg/hugo:latest
+    pull: true
     commands:
       - hugo
   deploy:
     image: node:lts
+    pull: true
     commands:
       - npm install netlify-cli -g
-      - netlify help
+      - netlify deploy --dir=public
+    secrets: [netlify_auth_token, netlify_site_id]
