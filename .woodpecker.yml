@@ -3,7 +3,7 @@ pipeline:
     image: klakegg/hugo:latest
     pull: true
     commands:
-      - hugo
+      - hugo --baseURL / --minify
   deploy-prod:
     image: tryvium/netlify-cli
     pull: true
