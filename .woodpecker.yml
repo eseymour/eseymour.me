@@ -1,23 +1,25 @@
 pipeline:
-  build:
-    image: klakegg/hugo:latest
-    pull: true
-    commands:
-      - hugo --baseURL / --minify
-  deploy-prod:
-    image: tryvium/netlify-cli
-    pull: true
-    commands:
-      - netlify deploy --prod --dir=public --message="$CI_COMMIT_MESSAGE"
-    secrets: [netlify_auth_token, netlify_site_id]
+  publish:
+    image: plugins/docker
+    privileged: true
+    settings:
+      build_args:
+        - gzipLevel=9
+        - brotliLevel=11
+      registry: git.eseymour.me
+      repo: git.eseymour.me/docker/eseymour.me
+      username:
+        from_secret: registry_username
+      password:
+        from_secret: registry_password
     when:
       branch: main
-  deploy-draft:
-    image: tryvium/netlify-cli
-    pull: true
-    commands:
-      - netlify deploy --dir=public --message="[$CI_COMMIT_BRANCH $CI_BUILD_EVENT] $CI_COMMIT_MESSAGE"
-    secrets: [netlify_auth_token, netlify_site_id]
+  publish-dry-run:
+    image: plugins/docker
+    privileged: true
+    settings:
+      dry_run: true
+      repo: git.eseymour.me/docker/eseymour.me
     when:
       branch:
         exclude: [main]
