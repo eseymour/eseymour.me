@@ -1,6 +1,7 @@
 .PHONY: server
 build:
-	docker build -t eseymour.me .
+	podman build -t eseymour.me .
 
-server: 
+.PHONY: server
+server:
 	docker-compose up
