@@ -4,7 +4,7 @@ date: 2017-05-05
 slug: "minesweeper"
 ---
 
-{{< figure src="/img/minesweeper.png" alt="minesweeper" class="left-aligned" >}}
+{{< figure src="/img/minesweeper.png" alt="minesweeper" class="left-aligned pixelated" >}}
 
 For my final project for Computer Architecture I, I wrote a minesweeper game
 for an MSP430, a microcontroller with only 512 bytes of RAM and 16kB flash.
