@@ -13,7 +13,7 @@ pygmentscodefencesguesssyntax: true
 
 params:
   author: Edward Seymour
-  info: 'Full-Stack Software Engineer based in Seattle, Washington'
+  info: 'Full-Stack Software Engineer based in El Paso, Texas'
   description: Edward Seymour's personal website
   keywords: 'blog,developer,personal'
   avatarurl: img/avatar.jpg
