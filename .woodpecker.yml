@@ -1,4 +1,4 @@
-pipeline:
+steps:
   publish:
     image: plugins/docker
     privileged: true
