@@ -1,6 +1,6 @@
 steps:
   publish:
-    image: plugins/docker
+    image: woodpeckerci/plugin-docker-buildx
     privileged: true
     settings:
       build_args:
@@ -15,7 +15,7 @@ steps:
     when:
       branch: main
   publish-dry-run:
-    image: plugins/docker
+    image: woodpeckerci/plugin-docker-buildx
     privileged: true
     settings:
       dry_run: true
