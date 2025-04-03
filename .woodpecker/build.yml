@@ -5,4 +5,4 @@ steps:
   build:
     image: ghcr.io/maurerle/woodpecker-hugo
     settings:
-      hugo_version: 0.101
+      hugo_version: 0.101.0
