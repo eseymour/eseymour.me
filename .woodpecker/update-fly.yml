@@ -1,0 +1,25 @@
+skip_clone: true
+depends_on:
+  - publish
+
+when:
+  - event: push
+    branch: main
+
+
+steps:
+  update-fly:
+    image: alpine/git
+    commands:
+      - git clone git@git.eseymour.me:eseymour/fly.git --branch main .
+      - git submodule update --init
+      - git config user.email "ci@eseymour.me"
+      - git config user.name "Woodpecker CI"
+      - cd static-sites/eseymour.me
+      - git checkout $CI_COMMIT_SHA
+      - cd ..
+      - git add eseymour.me
+      - 'git commit -m "auto: Update eseymour.me to ${CI_COMMIT_SHA:0:8}" -m CI_COMMIT_MESSAGE'
+      - git push
+    volumes:
+      - /etc/ssh/private:/root/.ssh

@@ -17,6 +17,7 @@ steps:
         from_secret: registry_password
     when:
       branch: main
+
   publish-dry-run:
     image: woodpeckerci/plugin-docker-buildx
     privileged: true
