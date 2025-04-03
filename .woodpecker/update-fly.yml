@@ -1,11 +1,10 @@
 skip_clone: true
 depends_on:
-  - publish
+  - build
 
 when:
   - event: push
     branch: main
-
 
 steps:
   update-fly:

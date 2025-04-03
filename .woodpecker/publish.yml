@@ -1,3 +1,6 @@
+depends_on:
+  - build
+
 when:
   event: push
 
