@@ -18,6 +18,10 @@ steps:
         from_secret: registry_username
       password:
         from_secret: registry_password
+      cache_to: type=local,dest=/var/cache/build
+      cache_from: type=local,src=/var/cache/build
+    volumes:
+      - /var/cache/blog:/var/cache/build
     when:
       branch: main
 
@@ -27,6 +31,10 @@ steps:
     settings:
       dry_run: true
       repo: git.eseymour.me/docker/eseymour.me
+      cache_to: type=local,dest=/var/cache/build
+      cache_from: type=local,src=/var/cache/build
+    volumes:
+      - /var/cache/blog:/var/cache/build
     when:
       branch:
         exclude: [main]
